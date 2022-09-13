@@ -212,12 +212,12 @@ print_r($sendMessages);
    top: 0;
    z-index: 100; padding-top: 0px;padding-bottom: 0px;margin-top: 0px; margin-bottom: 0px;">
             <a href="#" class="d-flex align-items-center"> <span class="icon-envelope mr-2"></span>
-                  <span class="d-none d-md-inline-block">comiadentalclinic@gmail.com</span>
+                  <span class="d-none d-md-inline-block">dentalreservation@gmail.com</span>
             </a> 
          
             <a href="#" class="d-flex align-items-center ml-auto mr-4">
                   <span class="icon-phone mr-2"></span>
-                  <span class="d-none d-md-inline-block">0919 935 4455 / 0995 466 8622 / 0915-4561079</span>
+                  <span class="d-none d-md-inline-block">0915 205 2904</span>
             </a>
                <style type="text/css">
               .anav:hover{
@@ -234,7 +234,7 @@ print_r($sendMessages);
        <nav class="navbar" style="position: sticky;
    top: 0;
    z-index: 100; padding-top:0px;padding-bottom: 0px;margin-left: 80px;margin-right: 80px;">
-          <h2 class="mb-0 site-logo" style="padding-right: 0px;"><a href="home.php"><img class="logo" src="images/comialogo.png">Comia</a></h2>
+          <h2 class="mb-0 site-logo" style="padding-right: 0px;"><a href="home.php"><img class="logo" src="images/Blue_Dental_Clinic_Logo.png" style = "width: 70px; height: 70px;">Comia</a></h2>
       <ul class="menu">
      
          <li class="item"><a class="anav"href="home.php">Home</a></li>
@@ -1086,7 +1086,7 @@ if(isset($_SESSION['UserLogin'])){
           <div class="col-md-12">
             <p>
         
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made by Gultiano, Harvey D., Tubo Camille D., Valderama, Jeric Ramos<i class="icon-heart-o" aria-hidden="true"></i><!--  by <a href="https://colorlib.com" target="_blank" >Colorlib</a> -->
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved<i class="icon-heart-o" aria-hidden="true"></i><!--  by <a href="https://colorlib.com" target="_blank" >Colorlib</a> -->
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -1127,11 +1127,11 @@ if(isset($_SESSION['UserLogin'])){
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
-<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-<script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
+  <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script src="assets/js/script.js"></script>
   </body>
 </html>
