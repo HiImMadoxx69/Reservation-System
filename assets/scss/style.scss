@@ -1,0 +1,540 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import "variable";
+/* ===================================== Basic CSS ==================================== */
+@import "base/basic_setup";
+
+header {
+  background-color: #fff;
+  .header-top {
+    .left-info {
+      li {
+        float: left;
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .rit-info {
+    float: right;
+    li {
+      padding: 10px;
+    }
+  }
+  .logo-row {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    img {
+      max-width: 290px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 10px;
+    }
+  }
+  .nav-row {
+    .navbar {
+      background-color: #fff !important;
+      @media screen and (max-width: 767px) {
+        padding: 0px;
+      }
+      .navbar-nav {
+        float: none;
+        margin: auto;
+        .nav-item {
+          padding: 5px 20px;
+          font-weight: 700;
+          color: #444;
+          font-size: 0.9rem;
+          .active {
+            background-color: #17adb6;
+            padding: 5px 15px;
+            border-radius: 50px;
+            color: #fff;
+            @media screen and (max-width: 767px) {
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-toggler {
+  float: right;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.slider {
+  .carousel-caption {
+    bottom: 150px;
+    @media screen and (max-width: 930px) {
+      bottom: 70px;
+    }
+    h3 {
+      background-color: rgba(23, 173, 182, 0.8);
+      width: auto;
+      width: fit-content;
+      text-align: left;
+      padding: 10px 15px;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      @include shado-1();
+      color: #fff;
+    }
+    p {
+      background-color: rgba(23, 173, 182, 0.8);
+      width: 60%;
+      text-align: left;
+      padding: 10px 20px;
+      color: #444;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 25px;
+      @include shado-1();
+      color: #fff;
+    }
+  }
+}
+
+.services {
+  background-color: #f7f7f7;
+  @include big-padding();
+  .servic-row {
+    .servcover {
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+      img {
+        margin-bottom: 20px;
+        max-width: 60px;
+      }
+      h4 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .span {
+      background-color: #17adb6;
+      color: #fff;
+      padding: 5px 25px;
+      font-weight: 600;
+      border-radius: 15px;
+      @include shado-1();
+      margin: auto;
+      margin-top: -17px;
+      margin-left: -20px;
+      width: 120px;
+    }
+    .servic-col {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mor-cover {
+      position: absolute;
+      margin-top: -15px;
+    }
+  }
+}
+
+.testimonial-container {
+  background-color: #f3f4f8;
+  padding: 50px;
+}
+@media screen and (max-width: 940px) {
+  .testimonial-container {
+    padding: 50px 10px;
+  }
+}
+.testimonial-container .float-auto {
+  float: none;
+  margin: auto;
+}
+
+.testimonial {
+  padding: 70px 30px 50px;
+  margin: 50px 30px 30px;
+  border: 1px solid #c2855a;
+  background-color: #fff;
+  box-shadow: 4.871px 10px 8px 0px rgb(0 0 0 / 6%);
+  position: relative;
+}
+
+.testimonial .pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #c2855a;;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial .description {
+  font-size: 15px;
+  color: #5e595b;
+  line-height: 27px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.testimonial .description:before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  color:  #c2855a;
+  position: absolute;
+  top: 0;
+  left: -2px;
+}
+
+.testimonial .title {
+  display: inline-table;
+  padding: 10px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #c2855a;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c2855a;;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+}
+
+.testimonial .post {
+  font-size: 15px;
+  color: #c2855a;;
+}
+
+.owl-theme .owl-controls {
+  width: 100%;
+  height: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 38%;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 0;
+  background: transparent;
+}
+
+.owl-prev {
+  position: absolute;
+  left: -5%;
+}
+
+.owl-next {
+  position: absolute;
+  right: -5%;
+}
+
+.owl-prev:after,
+.owl-next:after {
+  content: "\f104";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #c2855a;
+  opacity: 1;
+}
+
+.owl-next:after {
+  content: "\f105";
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial {
+    padding: 70px 10px 30px;
+  }
+
+  .testimonial .description:before {
+    top: -20px;
+  }
+
+  .testimonial .title {
+    font-size: 12px;
+  }
+
+  .testimonial .post {
+    font-size: 11px;
+  }
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.scroll-to-fixed-fixed {
+  @include shado-1();
+  .navbar-nav {
+    float: none;
+    margin: inherit !important;
+  }
+}
+
+/* =================== Blog Style Starts Here =================== */
+
+.blog {
+  padding: 50px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 990px) {
+  .blog {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .blog .container {
+    max-width: 100%;
+  }
+}
+.blog .blog-singe {
+  @include shado-1();
+  border-radius: 2px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.blog .blog-singe .blog-img-tab {
+  padding: 0px;
+}
+.blog .blog-singe .blog-content-tab {
+  padding: 15px;
+}
+.blog .blog-singe .blog-content-tab h2 {
+  font-size: 19px;
+}
+.blog .blog-singe .blog-content-tab i {
+  margin-right: 10px;
+  font-size: 12px;
+}
+.blog .blog-singe .blog-content-tab i small {
+  margin-left: 5px;
+  font-size: 100%;
+}
+.blog .blog-singe .blog-content-tab .blog-desic {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.blog .blog-singe .blog-content-tab a {
+  color: #007bfc;
+  font-size: 12px;
+  font-weight: 600;
+}
+.blog .blog-singe .blog-content-tab a i {
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.blog-row {
+  margin-top: 20px;
+}
+
+/* ===================================== Footer Cover Style  ================================== */
+.footer-ablove {
+  padding: 30px;
+  background-color: #05939c;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-ablove .btn {
+  float: right;
+  background-color: #fff;
+  font-family: "mouse-500", Arial, Helvetica, sans-serif;
+}
+
+footer {
+  padding: 80px 50px;
+  background-color: #05939c;
+  color: #fff;
+}
+@media screen and (max-width: 940px) {
+  footer {
+    padding: 50px 10px;
+  }
+}
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+footer .about p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+footer .about .foot-address {
+  display: flex;
+}
+footer .about .foot-address .icon {
+  padding: 20px 10px;
+}
+footer .about .foot-address .addet {
+  font-size: 0.9rem;
+  margin: auto 0px;
+}
+footer .fotblog .blohjb {
+  margin-bottom: 10px;
+}
+footer .fotblog .blohjb p {
+  font-size: 0.9rem;
+}
+footer .fotblog .blohjb span {
+  font-size: 0.9rem;
+}
+footer .glink ul li {
+  padding: 10px;
+}
+footer .glink ul li i {
+  margin-right: 10px;
+}
+footer .glink ul li a {
+  color: #fff;
+}
+footer .tags ul li {
+  float: left;
+  padding: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.copy {
+  padding: 20px;
+  background-color: #17adb6;
+  color: #fff;
+}
+.copy a {
+  color: #fff;
+}
+.copy span {
+  float: right;
+}
+.copy span i {
+  margin-right: 20px;
+}
+
+.cop-ck {
+  padding: 20px;
+  background-color: #ffffffbd;
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+
+.about-coo{
+	
+	background-color: #FFF;
+	@include big-padding();
+	.about-row{
+		
+		.about-img{
+			text-align: center;
+			margin: auto;
+			img{
+				
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+				}
+				@media only screen and (max-width: 476px) {
+					margin-bottom: 30px;
+				}
+			}
+		}
+		.about-text{
+			h1{
+				margin-bottom: 30px;
+				font-size: 2rem;
+				line-height: 40px;
+			}
+			p{
+				margin-bottom: 30px;
+			}
+			.about-featur{
+				ul{
+					width: 100%;
+					margin-left: -10px;
+					li{
+						padding: 10px;
+						width: 50%;
+						float: left;
+						font-weight: 400;
+						i{
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* ===================================== Our Team Style  ================================== */
+
+.our-team {
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .our-team {
+      padding: 50px 10px; } }
+.our-team .team-row {
+    margin-top: 20px; }
+.our-team .team-row .single-usr {
+      box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+      margin-bottom: 20px; 
+}
+.our-team .team-row .single-usr img {
+        width: 100%; 
+}
+.our-team .team-row .single-usr .det-o {
+        padding: 20px;
+        background-color: #17adb6; 
+}
+.our-team .team-row .single-usr .det-o h4 {
+          color: #FFF;
+          margin-bottom: 0px; 
+}
+.our-team .team-row .single-usr .det-o i {
+          color: #FFF; 
+}
+
+
+.cont-row{
+	margin-bottom: 20px;
+} 
