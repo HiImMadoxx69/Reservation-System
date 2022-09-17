@@ -77,7 +77,8 @@ a {
   .btn:hover {
     -webkit-box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9) !important;
     box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9) !important;
-    top: -2px; }
+    top: -2px; 
+  }
 
 .bg-black {
   background: #000; }

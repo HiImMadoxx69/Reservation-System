@@ -730,7 +730,7 @@ if(isset($_SESSION['UserLogin'])){
 
               <div class="row form-group">
                 <div class="col-md-12">
-                   <button class="btn btn-primary" type="submit" name="register" id="register">Submit</button>
+                   <button class="btn btn-success" type="submit" name="register" id="register">Submit</button>
                 </div>
               </div>
             
