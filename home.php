@@ -1,13 +1,7 @@
 
 <?php
-
-
-
 require_once "connections/connections.php";     
-
-
 require 'vendor/autoload.php';
-
 use SMSGatewayMe\Client\ApiClient;
 use SMSGatewayMe\Client\Configuration;
 use SMSGatewayMe\Client\Api\MessageApi;
@@ -18,7 +12,7 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-require_once "connections/connections.php";
+
 $sql = "SELECT * FROM tblloginuser";
 $user = $con->query($sql) or die ($con->error);
 $row = $user->fetch_assoc();
