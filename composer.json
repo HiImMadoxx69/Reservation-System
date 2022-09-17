@@ -1,21 +1,17 @@
 
 {
-
-	"require": {
-        "psr/log": "^3.0",
-		"smsgatewayme/client": "^0.0.1"
-    },
-    "post-install-cmd": [
-        "php artisan clear-compiled",
-        "chmod -R 777 public/"
-    ],
-	
 	"repositories": [
 	  {
 		"type": "git",
 		"url": "https://github.com/smsgatewayme/client-php.git"
 	  }
 	],
-	
-    
+	"require": {
+		"psr/log": "^3.0",
+	  "smsgatewayme/client": "^0.0.1"
+	},
+	"post-install-cmd": [
+        "php artisan clear-compiled",
+        "chmod -R 777 public/"
+    ]
   }
