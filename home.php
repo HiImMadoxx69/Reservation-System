@@ -2,10 +2,10 @@
 <?php
 require_once "connections/connections.php";     
 require 'vendor/autoload.php';
-use SMSGatewayMe\Client\ApiClient;
-use SMSGatewayMe\Client\Configuration;
-use SMSGatewayMe\Client\Api\MessageApi;
-use SMSGatewayMe\Client\Model\SendMessageRequest;
+// use SMSGatewayMe\Client\ApiClient;
+// use SMSGatewayMe\Client\Configuration;
+// use SMSGatewayMe\Client\Api\MessageApi;
+// use SMSGatewayMe\Client\Model\SendMessageRequest;
 
 if(!isset($_SESSION)){
 
@@ -110,17 +110,17 @@ $result = mysqli_query($con, $sql);
 
 
 // Configure client
-$config = Configuration::getDefaultConfiguration();
-$config->setApiKey('Authorization', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTY1NTQ2MDQ5OSwiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjk1MTU3LCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.8kYEkoHLAKaDqIU01UwicboSvKNRRXP79OFyQc5Px78');
-$apiClient = new ApiClient($config);
-$messageClient = new MessageApi($apiClient);
+// $config = Configuration::getDefaultConfiguration();
+// $config->setApiKey('Authorization', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTY1NTQ2MDQ5OSwiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjk1MTU3LCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.8kYEkoHLAKaDqIU01UwicboSvKNRRXP79OFyQc5Px78');
+// $apiClient = new ApiClient($config);
+// $messageClient = new MessageApi($apiClient);
 
-// Sending a SMS Message
-$sendMessageRequest1 = new SendMessageRequest([
-    'phoneNumber' => '$contact',
-    'message' => 'Your Appointment Request is Pending Please wait For Confirmation We will send a SMS Notification if Confirmed',
-    'deviceId' => 128701
-]);
+// // Sending a SMS Message
+// $sendMessageRequest1 = new SendMessageRequest([
+//     'phoneNumber' => '$contact',
+//     'message' => 'Your Appointment Request is Pending Please wait For Confirmation We will send a SMS Notification if Confirmed',
+//     'deviceId' => 128701
+// ]);
 
 $sendMessages = $messageClient->sendMessages([
     $sendMessageRequest1
