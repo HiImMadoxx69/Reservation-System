@@ -1,6 +1,5 @@
-
 <?php
-require_once "connections/connections.php";     
+ 
 // require 'vendor/autoload.php';
 // use SMSGatewayMe\Client\ApiClient;
 // use SMSGatewayMe\Client\Configuration;
@@ -11,7 +10,9 @@ if(!isset($_SESSION)){
 
     session_start();
 }
+include_once("connections/connection.php");  
 
+$con = connection();
 
 $sql = "SELECT * FROM tblloginuser";
 $user = $con->query($sql) or die ($con->error);
@@ -40,8 +41,6 @@ if($pass1 == $pass2){
  $result = mysqli_query($con, $sql);
 $checkRow = mysqli_affected_rows($con);
  if ($checkRow <= 0) {
-
-
 
    $sql ="INSERT INTO `tblloginuser` (`firstname`, `lastname`, `contact`, `username`, `password`, `Access`, `image`) VALUES ('$fname', '$lname', '$contact', '$username', '$pass', '$access', '$img');";
  $result = mysqli_query($con, $sql);
