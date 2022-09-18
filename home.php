@@ -1,7 +1,7 @@
 
 <?php
 require_once "connections/connections.php";     
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
 // use SMSGatewayMe\Client\ApiClient;
 // use SMSGatewayMe\Client\Configuration;
 // use SMSGatewayMe\Client\Api\MessageApi;
